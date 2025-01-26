@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Gate Hotels co</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="main.js" defer></script>
+    <style>
+      section {
+        padding: 60px 0;
+      }
+        
+      .src {
+        background-color: rgba(128, 128, 128, 0.192);
+      }
+
+      .mm {
+        display: none;
+      }
+
+      .format {
+        display: block;
+      }
+
+      .invalid {
+        color: rgba(255, 0, 0, 0.836);
+      }
+      .whitespace {
+        break-inside: avoid;
+        white-space: nowrap;
+      }
+      address {
+      display: grid;
+      place-content: center;
+      }
+      
+      .txt {
+        color: red;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .shh {
+        text-shadow: 3px 5px 10px ;
+      }
+    </style>
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+      <div class="container-xl">
+        <a class="navbar-brand py-0" href="#intro"><img src="img/lilygate-web-logowhite.png" class="d-none d-md-inline" alt="LilyGate" style="width: 150px;" >
+        </a>
+
+        <img src="img/lilygate-web-logowhite.png" class="py-0 d-md-none" style="width: 150px;" alt="lilyGate-Icon">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lilygate-navbar" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="lilygate-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#intro">Home</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#pricing">Price Rate</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#ratings">Ratings & Reviews</a>
+            </li>      
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#bookings">Bookings</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#sidebar"  data-bs-toggle="offcanvas" aria-controls="sidebar">About LilyGate</a>
+            </li>                  
+            <li class="nav-item ps-2">
+              <a class="nav-link" href="#contact">Contacts Us</a>
+            </li>      
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <div class="mx-auto">
+      <img src="img/lilygate-web-logowhite.png" alt="lilygate"  style="width: 250px; height: 60px; background-color: darkgrey;" class="rounded px-3">
+    </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae, commodi iste cupiditate sed doloremque dolor dolorem veritatis at eligendi ea quae. Pariatur, ipsam magnam repudiandae quasi numquam consectetur ut.
+      </p>
+
+      <h3 class="py-3 px-auto">Images about Lilygates</h3>
+      <img src="img/exterior-2.jpg" alt="lilygate" class="mb-3">
+      <img src="img/exterior-3.jpg" alt="lilygate" class="mb-5">
+
+      <h4 class="py-2">The Lobby</h4>
+      <img src="img/lobby-night.jpg" alt="lilygate" class="mb-3">
+      <img src="img/interior-1.jpg" alt="lilygate" class="mb-5">
+
+      <h4 class="py-2">Bar & Restaurant</h4>
+      <img src="img/l1001255-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/l1001206-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/l1001243-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/kao-8801-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/kao-8714-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/kao-8705-custom.jpg" alt="lilygate" class="mb-3">
+      <img src="img/kao-8691-custom.jpg" alt="lilygate" class="mb-5">
+
+      <h4 class="py-2">Hotel Environment</h4>
+      <img src="img/exterior-10.jpg" alt="lilygate" class="mb-3">
+      <img src="img/pool-side-night.jpg" alt="lilygate" class="mb-3">
+      <img src="img/pool-side-water-fall.jpg" alt="lilygate" class="mb-4">
+    </div>
+</div>
+
+  <main>
+    <section id="intro" class="mx-0 src">
+      <div class="justify-content-center">
+        <div class="text-center">
+          <img src="img/lilygate-logo-web-white.png" alt="Intro-image" class="col-9 col-sm-7 col-md-6 col-lg-4">
+        </div>
+
+        <div class="text-center">
+          <h2 class="display-4 text-muted fw-bold pb-4 shh">Lilygate Hotels</h2>
+        </div>
+      </div>  
+    </section>
+
+    <section id="pricing">
+      <div class="container-lg">
+        <div class="text-center">
+        <h2>Price Rates</h2>
+        <p class="lead text-muted">Rooms Prices & Rate</p>
+      </div>
+
+      <div class="row my-5 align-items-center justify-content-center g-0">
+        <div class="col-8 col-lg-7 col-xl-3 shadow">
+            <div class="card border-0">
+                <div class="card-body text-center py-4">
+                    <h4 class="card-title">Kings Suites</h4>
+                    <div class="pb-2">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </div>
+                    <p class="lead card-subtitle">Kings Treatment++</p>
+                    <p class="display-5 text-primary fw-bold">$170.00</p>
+                    <img src="img/kao-8551.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 350px; height: 270px;" alt="Hotels-img">
+                    <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9 col-lg-8 col-xl-5">
+            <div class="card border-primary border-2 shadow">
+                <div class="card-header text-center text-primary">Most Popular</div>
+                <div class="card-body text-center py-5">
+                    <h4 class="card-title">Presidential Suites</h4>
+                    <div class="pb-2">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </div>
+                    <p class="lead card-subtitle">Fancy Rooms & Presidential Taste++</p>
+                    <p class="display-5 text-primary fw-bold">$250.00</p>
+                    <img src="img/kao-8603.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 450px; height: 400px;" alt="Hotels-img">
+                    <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8 col-lg-7 col-xl-3 shadow">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Deluxe Suites</h4>
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p class="lead card-subtitle">Upgraded Rooms & Extra Treatment</p>
+              <p class="display-5 text-primary fw-bold">$200.00</p>
+              <img src="img/kao-8542.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 400px;" alt="">
+              <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      <!-- Other Selection -->
+      <div class="row my-5 align-items-center justify-content-center g-0">
+        <div class="col-7 col-lg-6 col-xl-3 shadow">
+            <div class="card border-0">
+                <div class="card-body text-center py-4">
+                    <h4 class="card-title">Double Suites</h4>
+                    <div class="pb-2">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                  </div>
+                    <p class="lead card-subtitle">Double Bed++</p>
+                    <p class="display-5 text-primary fw-bold">$100.00</p>
+                    <img src="img/kao-8551.jpg" class="card-text mx-auto text-muted d-none d-lg-block" style="width: 260px;" alt="">
+                    <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8 col-lg-7 col-xl-4">
+            <div class="card border-secondary border-2 shadow">
+                <div class="card-body text-center py-5">
+                    <h4 class="card-title">Exclusive Suites</h4>
+                    <div class="pb-2">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                  </div>
+                    <p class="lead card-subtitle">Xclusive Features</p>
+                    <p class="display-5 text-primary fw-bold">$155.99</p>
+                    <img src="img/kao-8744.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 400px;" alt="Hotels-img">
+                    <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-7 col-lg-6 col-xl-3 shadow">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Double XL Suites</h4>
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="lead card-subtitle">Double Bed Xtraordinaire</p>
+              <p class="display-5 text-primary fw-bold">$120.50</p>
+              <img src="img/kao-8542.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 300px" alt="">
+              <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-7 col-lg-5 col-xl-4 shadow">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Single Suites</h4>
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="lead card-subtitle">Special Features</p>
+              <p class="display-5 text-primary fw-bold">$60.00</p>
+              <img src="img/kao-8542.jpg" class="card-text mx-auto text-muted d-none d-lg-block img-fluid" style="width: 300px;" alt="">
+              <a href="#bookings" class="btn btn-outline-primary btn-lg mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="ratings" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Ratings & Reviews</h2>
+          <p class="text-muted lead">Customers reviews and ratings</p>
+        </div>
+
+        <div class="row justify-content-center g-2">
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 shadow">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Mr James Collins</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="text-muted card-subtitle"><q>The perfect place from which to explore, cruise and chill comfortable.
+                  Plenty of electric sockets to charge my devices and work with my laptop.
+                  Great TV and really excellent hot shower, so easy to use tbh.Friendly staff and fantastic breakfast they serve.And the hotel is central and closer to everywhere. </p>
+                <p class="text-muted card-subtitle mt-2"><q>I will certainly be back for sure 👍</q></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 shadow">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Mrs Sandra Koffi</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="text-muted card-subtitle"><q>Nice music taste at the bar and restaurant.</q></p>
+                  <p class="text-muted card-subtitle"><q>I came for my Honey-moon with my husband and i never regretted ever making reservation all the way from Ghana. 
+                    The Room was just for our needs for this type of <q>Staycation</q>.Suprisingly fun jazz evening with my husband with good tapas table and nice wines. Hotels location is perfect and breakfast really ok with warm dishes and good coffee. What else do you need? 
+                  </q></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 ">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Mr Samuel Christian</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="text-muted card-subtitle"><q>The Hotel is an excellent place tho, very cozy and they've got nice food. They've got multiple choices as a main dish which is very smart and organizing.
+                  <p class="text-muted"><q>Forgot to say i tested todays chicken, OMG it was very delicious . Great chef and excellent price and quality ratio. I love the environment, the bar and restaurant was the best with the right music for every mood. I loved the lobby, it has nice lights as bright as the day. Lilygate's one of the best hotels i can say....</q></p>
+                </q></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 shadow">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Tobechukwu Elias</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="text-muted card-subtitle">"Beautiful stay!
+                  <p class="text-muted">Hotel Lilygate is a perfect place to stay in Lagos.The room was very pleasant, it was cozy, comfortable and clean. Breakfast was excellent and incredibly varied. The hotel teams has always been friendly, patient and most of all helpful. That impressed me the most . No matter what time of day or night, you could turn to them with all your concerns.On my next stays, I will definitely check into Lilygate's Hotel again. The price performance ratio is very good."</p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 shadow">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Ayomide Richard</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="text-muted card-subtitle">"Lilygate - a nice & comfortable hotel in the heart of Lagos i have to say. Comfy and close to everything, The room was comfortable and i'm a big fan of scandinavian bathroom structures, they are very practical altogether. The breakfast was delicious and the the hotel was very kind to pack us a breakfast when we were checking out earlier than the restaurant's opening hour. The staff was also kind and helpful with anything, with perfect English, so there were no miscommunication issues."              
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-sm-7 col-md-6 col-lg-5 col-xl-4 shadow">
+            <div class="card border-0">
+              <div class="card-body py-4">
+               <h5 class="card-title">Funmilayo Kingsley</h4>
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="text-muted card-subtitle">"This hotel has a nice treat for customers which i love very much, staffs  and environment is very conducive. The room itself is a nice and comfortable place for my vacation, I lodged the kings suites which had the features and extra, a king sized bed and all the necessary amenities.
+                  The food was extra delicious, Breakfast was abundant with plenty of choices, the coffee and juice was very nice. I wish to thank especially the waitress in the breakfast service. She's got a cheerful personality with a great attitude to work and customers. I'll surely be back again..."              
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+    </section>
+
+    <!-- Book Us.. -->
+    <section id="bookings">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <h2>Book Us Now</h2>
+            <p class="text-muted lead">Book your reservation Now</p>
+          </div>
+
+          <form class="col-lg-6 col-md-8 mt-3">
+      
+            <label for="full-name" class="fw-bold form-label">Full Name</label>
+            <div class="input-group flex-nowrap mb-3">
+              <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+              <input type="text" id="full-name" class="form-control" placeholder="Chima Chibuike" required
+              autocomplete="off" aria-label="Username">
+              <!-- Tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" data-bs-title="Insert full name">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>    
+            </div>
+
+            <label for="email" class="form-label fw-bold">Email</label>
+            <div class="input-group flex-nowrap mb-1">
+              <span class="input-group-text"><i class="bi bi-envelope-check-fill"></i></span>
+              <input type="email" id="email" class="form-control mms" placeholder="name@example.com" required autocomplete="off" aria-label="Username">
+              <!-- Tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Insert email format correctly">
+                    <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+            <p class="small text-muted mm my-0 ms-3">"Insert the right format"</p>
+         
+            <label for="Hotels-suites" class="form-label fw-bold mt-3">Pick Suite of Choice...</label>
+            <div class="input-group flex-nowrap mb-3">
+              <span class="input-group-text"><i class="bi bi-house-check-fill"></i></span>
+              <select class="form-select" id="Hotels-suites">
+                <option value="pricing" selected>Presidential Suites</option>
+                <option value="content">Deluxe Suites</option>
+                <option value="other">Kings Suites</option>
+                <option value="other">Exclusive Suites</option>
+                <option value="other">Double XL Suites</option>
+                <option value="other">Double Suites</option>
+                <option value="other">Single Suites</option>
+              </select>
+            </div>
+            
+            <label for="location" class="form-label fw-bold">Insert Location (L.G.A)</label>
+            <div class="col-10">
+              <div class="input-group flex-nowrap mb-3">
+                <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                <select class="form-select" id="location">
+                  <option value="location-selected" selected>Location across Lagos...</option>
+                  <option value="location-selected">Lagos Island </option>
+                  <option value="locations">Lagos Mainland</option>
+                  <option value="locations">Ibeju Lekki</option>
+                  <option value="locations">Ikeja</option>
+                  <option value="locations">Ojo</option>
+                  <option value="locations">Epe</option>
+                  <option value="locations">Shomolu</option>
+                  <option value="locations">Bariga</option>
+                  <option value="location">Surulere</option>
+                  <option value="location">Shomolu</option>
+                  <option value="other">Others</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="Numbers" class="form-label fw-bold">Numbers of room(s)</label>
+            <div class="col-12">
+              <div class="input-group flex-nowrap mb-3">
+                <p>
+                  <input type="checkbox" name="room1" id="room1"> 
+                  <label for="room1">A room</label>
+                </p>               
+                <p class="ps-3">
+                  <input type="checkbox" name="room2" id="room2"> 
+                  <label for="room1">2 rooms</label>
+                </p>               
+                <p class="ps-3">
+                  <input type="checkbox" name="room3" id="room3"> 
+                  <label for="room1">3 rooms</label>
+                </p>               
+                <p class="ps-3">
+                  <input type="checkbox" name="room4" id="room4"> 
+                  <label for="room1">4 rooms</label>
+                </p>                       
+                <p class="ps-3">
+                  <input type="checkbox" name="more" id="more"> 
+                  <label for="room1">More</label>
+                </p>               
+                              
+              </div>
+            </div>
+
+            <div class="text-center mb-3">
+              <button class="btn btn-secondary">Submit</button>
+            </div>
+          </form>
+        </div>  
+      </div>
+      
+    </section>
+
+    <section id="contact" class="bg-secondary">
+      <div class="container-md">
+        <div class="text-center">
+          <h2 class="text-light">Contact Now</h2>
+          <h5 class="fw-bold text-light">How to get to the hotel</h5>
+        </div>
+
+        <div class=" row justify-content-center">
+            <div class="mt-5 d-none d-md-block ms-3">
+              <div class="col-5 text-center mx-auto">
+                  <i class="bi bi-geo-alt-fill"></i>
+              <address class="fw-bold pb-3 text-light">2, Olubunmi Owa Street, <span class="whitespace"> Lekki Phase 1, Lagos, NIGERIA.</span></address>
+
+              <i class="bi bi-telephone-fill"></i>
+              <p>
+                <a href="tel:+23402019049000" class="txt pb-3">+234 020 190 49000</a>
+              </p>
+              
+              <p>
+                <a href="tel:+2348154991922" class="txt pb-3">+234 8154991922</a>
+              </p>
+              <p>
+                <a href="tel:+2348154991386" class="txt pb-3">+234 8154991386</a>
+              </p>
+              <p>
+                <i class="bi bi-whatsapp pe-2"></i>
+              <a href="http://WhatsApp.com" target="_blank" class="txt pb-5">+2348170332138(WhatsApp)</a>
+              </p>
+
+              <p class="mt-5">
+                <i class="bi bi-envelope-check pe-2"></i>
+                <a href="mailto:reservations@lilygatelagos.com" class="txt">reservations@lilygatelagos.com</a>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col-5 mt-5 d-md-none text-center ms-4">
+          <i class="bi bi-geo-alt-fill"></i>
+          <address class="fw-bold pb-3 ps-4 text-light">2, Olubunmi Owa Street, <span class="whitespace ps-4"> Lekki Phase 1, Lagos, NIGERIA.</span></address>
+        
+          <i class="bi bi-telephone-fill"></i>
+          <p>
+            <a href="tel:+23402019049000" class="txt pb-3 ">+234 020 190 49000</a>
+          </p>
+          <p>
+            <a href="tel:+2348154991922" class="txt pb-3 ">+234 8154991922</a>
+          </p>
+          <p>
+            <a href="tel:+2348154991386" class="txt pb-3 ">+234 8154991386</a>
+          </p>
+          <p>
+            <i class="bi bi-whatsapp pe-2"></i>
+            <a href="http://WhatsApp.com" target="_blank" class="txt pb-3 ">+2348170332138(WhatsApp)</a>
+          </p>
+
+          <p class="mt-4">
+            <i class="bi bi-envelope-check pe-2"></i>
+            <a href="mailto:reservations@lilygatelagos.com" class="txt">reservations@lilygatelagos.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
